@@ -23,10 +23,4 @@ do
       echo "......Congrats!! You have guessed correctly...."
   fi
 done
-path=$PWD
-cd ~
-if [[ -e .bash_profile  ]]
-then
-    echo "export PATH=~$path:$PATH" >> .bash_profile
-    source ~./bash_profile
-fi
+
