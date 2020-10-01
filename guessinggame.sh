@@ -2,6 +2,11 @@
 function guess {
 echo -n  "Guess,the number of files in this current directory:"
 read n
+if [[ $n =~ [^0-9] ]]
+then
+    echo -n  "Please only enter the numerial.value :"
+    read n
+fi
 
 }
 c=$(ls -1|wc -l)
